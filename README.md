@@ -1,2 +1,2 @@
-# toddfranklinongithub.io
+# toddfranklin.github.io
 website publication
