@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Latitude Versus</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+<style type="text/css">
+            body { background: lightblue !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+         </style>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navbar.html");
+});
+</script>
+<h3>HUMIDITY COMPARISONS</h3>
+<br>
+
+
+        
+
+<div class="container">
+    <p>
+
+        A comparison of humidity compared to distance from the equator (latitude).
+        A regression analysis is also included for each hemisphere. 
+        It is expected that as you get closer to the equator it gets more humid. 
+        Something looks wrong with the regression in the Northern Hemisphere.
+        Perhaps the data analyst should be replaced ! 
+        
+        </p>
+    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="WebVisualizations/Resources/Images/citylatvshum.png" class="img-responsive">
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="WebVisualizations/Resources/Images/latvHum-NHem_LR.png" class="img-responsive">
+    </div>
+    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="WebVisualizations/Resources/Images/latvhum_SHem-LR.png" class="img-responsive">
+    </div>
+</div>
+
+
+</div>
+
+
+    </body>
+</html>
+

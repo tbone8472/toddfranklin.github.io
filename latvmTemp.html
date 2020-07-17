@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Latitude Versus</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+<style type="text/css">
+            body { background: lightcyan !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+         </style>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navbar.html");
+});
+</script>
+<br/>
+<h3>TEMPERATURE COMPARISONS</h3>
+<br>
+
+
+
+<div class="container">
+    <p>
+
+        A comparison of temperature compared to distance from the equator ( latitude ).
+        As one would expect, the latitudes clustered around the equator "0", record the highest 
+        temperatures.  Regression analyses are also included for the north and south hemispheres. 
+        From this data it is easy to see that as you get closer to the equator it gets hotter . 
+        
+    </p>
+    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="WebVisualizations/Resources/Images/citylatvstemp.png" class="img-responsive">
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="WebVisualizations/Resources/Images/mTempvLat_NHem-LR.png" class="img-responsive">
+    </div>
+    <div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="WebVisualizations/Resources/Images/mTempvLat_SHem-LR.png" class="img-responsive">
+    </div>
+</div>
+
+
+</div>
+
+
+        
+    </body>
+</html>
+

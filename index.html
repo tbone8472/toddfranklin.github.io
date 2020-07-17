@@ -1,19 +1,86 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Todd Franklin</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-	<p>My name is Todd M Franklin Anything information that your read from this paragraph, may or may not be true. I am a student of Data Sience Bootcamp at Rutgers.</p>
-	
-	<ul>
-	  <li>Email:</li><a href="https://mail.google.com/mail/u/0/#inbox">Link to Gmail</a>
-	  <li>Github:</li><a href="https://github.com/tbone8472">Link to Github</a>
-	  <li>LinkedIn:</li><a href="https://LinkedIn.com/">Link to LinkedIn</a>
-	</ul>
-	
-	
-	
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Latitude Versus</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        <style type="text/css">
+            body { background: lightcyan !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+         </style>
+        
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
+        
+
+        
+        <div class="container col-sm-4">
+            <h3>LATITUDE</h3>
+
+            <img class="img-responsive" alt="" src="WebVisualizations/Resources/Images/citylatvstemp.png">
+            
+ <br/>           
+            <p> 
+                
+              This project is an investigation and exploration into the possible correlations between the dependent variables of weather, 
+              temperature, humidity, wind velocity, and cloud density in a given latitude. The "usual suspects", in terms of data science tools,
+              are being used to effect the foray into these investigations, including pandas, matplotlib, and sklearn (pandas module). The
+              data is being extracted from openweatherapi.org, a purveyor of geographical and climate related data.  
+
+                  </p>
+                  
+        </div>
+
+        <div class="col-sm-4">
+
+            <h3>Visualizations</h3>
+            <br>
+            
+
+
+            <div class="container">
+                <div class="col-md-3" style="padding-left: 2px;  padding-right: 0px;">
+                     <a href="latvCloudi.html">
+                    <img src="WebVisualizations/Resources/Images/citylatvscloud.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-3" style="padding-left: 5px;  padding-right: 0px;">
+                     <a href="latvmTemp.html">
+                    <img src="WebVisualizations/Resources/Images/citylatvstemp.png" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-md-3" style="padding-left: 2px;  padding-right: 0px;">
+                     <a href="latWindSpd.html">
+                    <img src="WebVisualizations/Resources/Images/citylatvswindspd.png" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-3" style="padding-left: 0px;  padding-right: 0px;">
+                     <a href="latvHumidity.html">
+                    <img src="WebVisualizations/Resources/Images/citylatvshum.png" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+           
+  
+        </div>
+  
+    </body>
 </html>
+
